@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/89097b4ee1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-sky-200 shadow-2xl mt-12 w-6/12 mx-auto px-28 pb-12 pt-4 rounded-md">
+        <h1 class="text-3xl text-center mb-4">My Text Editor</h1>
+        <div class="container bg-sky-100  p-4 w-10/12 mx-auto shadow-xl rounded-sm">
+            <div class="p-4 border-b-2 border-gray-500 mb-4 ">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4  ">
+                        <i id="bold" class="fa-solid fa-bold hover:bg-sky-200 p-2"></i>
+                        <i id="italic" class="fa-solid fa-italic hover:bg-sky-200 p-2"></i>
+                        <i id="under-line" class="fa-solid fa-underline hover:bg-sky-200 p-2"></i>
+                    </div>
+                    <div class="flex gap-4 items-center ">
+                        <i id="left-align" class="fa-solid fa-align-left hover:bg-sky-200 p-2"></i>
+                        <i id="center-align" class="fa-solid fa-align-center hover:bg-sky-200 p-2"></i>
+                        <i id="right-align" class="fa-solid fa-align-right hover:bg-sky-200 p-2"></i>
+                        <i id="justify-text" class="fa-solid fa-align-justify hover:bg-sky-200 p-2"></i>
+                    </div>
+                    <div class="flex gap-4 items-center">
+
+                        <input id="font-size" class="w-8 bg-sky-100 hover:bg-sky-200" type="number" value="14">
+
+                        <i id="reset" class="fa-solid fa-text-slash"></i>
+                        <input id="color-picker" type="color" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <textarea class="shadow-sm w-full h-96 p-2 border-none " name="" id="text-area"
+                placeholder="Your text here"></textarea>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
